@@ -1,0 +1,51 @@
+<resources>
+
+    <attr name="ContactsAppStyle" format="reference" />
+
+    <declare-styleable name="ContactsAppView">
+
+        <!-- 主题颜色 -->
+        <attr name="themeColor" format="reference|color" />
+        <!-- sb 背景 -->
+        <attr name="smartBarBackground" format="reference|color" />
+        <!-- sb 返回键 -->
+        <attr name="smartBarBackIcon" format="reference" />
+        <!-- sb 联系人键 -->
+        <attr name="smartBarContactsIcon" format="reference" />
+        <!-- sb 拨号键 -->
+        <attr name="smartBarDialerIcon" format="reference" />
+        <!-- sb 拨号键显示 -->
+        <attr name="smartBarDialerDisplayIcon" format="reference" />
+        <!-- sb 设置键 -->
+        <attr name="smartBarSettingsIcon" format="reference" />
+        <!-- sb 更多键 -->
+        <attr name="smartBarMoreIcon" format="reference" />
+        <!-- sb 联系人键 Press -->
+        <attr name="smartBarContactsPressIcon" format="reference" />
+        <!-- sb 拨号键 Press -->
+        <attr name="smartBarDialerPressIcon" format="reference" />
+        <!-- sb 拨号键显示 Press -->
+        <attr name="smartBarDialerDisplayPressIcon" format="reference" />
+        <!-- sb 设置键Press -->
+        <attr name="smartBarSettingsPressIcon" format="reference" />
+        <!-- ActionBar 背景 -->
+        <attr name="actionBarBackground" format="reference|color" />
+        <!-- 页面标题栏文字颜色 -->
+        <attr name="titleColor" format="reference|color" />
+        <!-- 拨号盘 背景 -->
+        <attr name="dialpadBackground" format="reference|color" />
+        <!-- 拨号盘操作栏背景 -->
+        <attr name="dialpadOperateBackground" format="reference|color" />
+        <!-- 数字键按钮背景 -->
+        <attr name="numberButtonBackground" format="reference|color" />
+        <!-- 联系人页签搜索栏左图标 -->
+        <attr name="contactsSearchLeftIcon" format="reference" />
+        <!-- 联系人页签搜索栏清除图标 -->
+        <attr name="contactsSearchCleanIcon" format="reference" />
+        <!-- 粘贴号码图标 -->
+        <attr name="pasteNumIcon" format="reference" />
+        <!-- 复制号码图标 -->
+        <attr name="copyNumIcon" format="reference" />
+    </declare-styleable>
+
+</resources>

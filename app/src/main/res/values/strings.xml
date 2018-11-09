@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">魅拨号</string>
+    <string name="dialer">拨号</string>
+    <string name="recent_call_log">最近通话</string>
+    <string name="no_call_log">暂无通话记录，请确保已允许读取通话记录权限\n如已允许，点击重新加载</string>
+    <!-- <string name="meizu_no_call_log">请允许读取通话记录权限后退出重新打开</string> -->
+    <string name="send_sms">发送短信</string>
+    <string name="add_contact">加至新联系人</string>
+    <string name="add_to_exist">加至已有联系人</string>
+    <string name="edit_contact">编辑联系人</string>
+    <string name="search_num">在线查询号码</string>
+    <string name="settings">设置</string>
+    <string name="more">更多</string>
+    <string name="contacts">联系人</string>
+    <string name="no_contact">暂无联系人，请确保已允许读取联系人权限\n如已允许，点击重新加载</string>
+    <!-- <string name="meizu_no_contact">请允许读取联系人权限后退出重新打开</string> -->
+    <string name="contacts_loading">正在努力加载....</string>
+    <string name="contacts_count_format">联系人(共%s人)</string>
+    <string name="cancel_text">取消</string>
+    <string name="ok_text">确定</string>
+    <string name="crash_error_exit">^o^程序开了个小差，请重新打开</string>
+    <string name="search_contact_format">共有%s位联系人，点此搜索</string>
+    <string name="select_action">添加为</string>
+    <string name="copy_num">已复制</string>
+    <string name="refresh">刷新</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="remind">提示</string>
+    <!-- 添加联系人 -->
+    <string-array name="action_type">
+        <item>新联系人</item>
+        <item>已有联系人</item>
+    </string-array>
+    <!-- 通话详情 -->
+    <string name="call_detail">通话详情</string>
+    <string name="duration_hms_format">%1$s时%2$s分%3$s秒</string>
+    <string name="duration_ms_format">%1$s分%2$s秒</string>
+    <string name="call_outgoing">呼出</string>
+    <string name="call_incoming">呼入</string>
+    <string name="call_missed">未接</string>
+    <string name="call_rejected">拒接</string>
+    <string name="number_type_home">住宅</string>
+    <string name="number_type_mobile">手机</string>
+    <string name="number_type_work">公司</string>
+    <string name="number_type_fax">传真</string>
+    <string name="number_type_other">其他</string>
+    <string name="number_type_self">自定义</string>
+
+    <string-array name="number_type">
+        <item>自定义</item>
+        <item>住宅</item>
+        <item>手机</item>
+        <item>公司</item>
+        <item>传真</item>
+        <item>其他</item>
+        <item>其他</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 联系人操作 -->
+    <string name="contacts_option">联系人选项</string>
+    <string name="contacts_option_title">联系人选项</string>
+    <string name="merge_contacts_title">合并联系人</string>
+    <string name="contacts_operate_title">联系人操作</string>
+    <string name="contacts_operate_summary">批量删除，SIM卡导入、导出</string>
+    <string name="phone_contacts_title">手机联系人</string>
+    <string name="sim_contacts_title">SIM卡联系人</string>
+    <!-- 个性彩铃 -->
+    <string name="colors_ring">个性彩铃</string>
+    <string name="colors_ring_summary">支持三网，可自定义，免费不限次数更换</string>
+    <!-- 主题设置 -->
+    <string name="app_theme">主题美化</string>
+    <string name="theme_set_title">沉浸式主题设置</string>
+    <string name="theme_set_summary">碳墨黑</string>
+    <string name="theme_set_success">主题设置成功</string>
+
+    <!-- 皮肤设置 -->
+    <string name="skin_set_title">皮肤设置</string>
+    <string name="skin_set_summary">默认风格</string>
+    <string name="skin_start">启用</string>
+    <string name="skin_using">使用中</string>
+    <string name="skin_default">默认风格</string>
+    <string name="skin_hellokitty">Hello Kitty</string>
+
+    <string-array name="theme_set_array">
+        <item>默认</item>
+        <item>碳墨黑</item>
+        <item>晴空蓝</item>
+        <item>薰衣紫</item>
+        <item>浅草绿</item>
+        <item>鲜果橙</item>
+        <item>落樱粉</item>
+        <item>土豪金</item>
+    </string-array>
+    <!-- 软件设置 -->
+    <string name="app_settings">软件设置</string>
+    <string name="clean_call_log_title">清除通话记录</string>
+    <string name="clean_call_log_summary">点击清除所有通话记录</string>
+    <string name="clean_call_log_remind">清除所有通话记录？</string>
+    <string name="clean_log_remind">清除通话记录？</string>
+    <string name="relay_dialer_title">接管系统拨号</string>
+    <string name="relay_dialer_summary">需开机自启动、后台运行、悬浮窗权限</string>
+    <string name="spam_call_title">骚扰拦截</string>
+    <string name="spam_call_summary">原生拨号的来电过滤</string>
+    <string name="call_record_title">通话录音</string>
+    <string name="call_record_summary">通话录音列表</string>
+    <string name="ip_call_title">前缀IP号码</string>
+    <string name="input_ip_call">请输入前缀/IP号码</string>
+    <string name="ip_call_summary">长按呼叫自动加入前缀%s</string>
+    <string name="ip_call">/IP号码</string>
+    <string name="call_ip_num">拨打IP号码</string>
+    <!-- 评价购买 -->
+    <string name="buy_app_title">五星评论</string>
+    <string name="buy_app_summary">您的好评和建议是我们前进的动力</string>
+    <!-- 意见反馈 -->
+    <string name="feedback_title">意见反馈</string>
+    <string name="feedback_summary">告诉我们您的想法吧，请务必附上您的QQ号码</string>
+    <!-- 分享软件 -->
+    <string name="share_title">分享软件</string>
+    <string name="share_summary">独乐乐不如众乐乐</string>
+    <string name="share_app">"分享"</string>
+    <string name="share_content">"魅族终于有了T9智能拨号——【魅拨号】，无任何广告，在魅族应用中心搜索“魅拨号”即可下载。</string>
+    <!-- 检查更新 -->
+    <string name="version_title">版本信息</string>
+    <string name="version_summary">当前版本：7.5.0</string>
+    <string name="check_update_btn_text">检查更新</string>
+    <string name="check_update_progress_message">正在检查更新</string>
+    <string name="update_log_title">更新日志</string>
+    <string name="update_log_text">        V7.5.0更新日志:\n
+		1、【优化】Flyme5骚扰拦截；\n
+		2、【优化】联系人号码的匹配；\n\n
+        V7.4.0更新日志:\n
+		1、【优化】拨号页面；\n\n
+        V7.3.0更新日志:\n
+		1、【优化】通话记录的加载；\n\n
+        V7.2.0更新日志:\n
+		1、【优化】Flyme5查询联系人；\n\n
+        V7.1.0更新日志:\n
+		1、【优化】Flyme5骚扰拦截；\n\n
+        V7.0.0更新日志:\n
+		1、【优化】通话记录的加载；\n
+		2、【优化】联系人自动合并；\n\n
+        V6.9.0更新日志:\n
+		1、【适配】魅蓝metal，PRO 5，MX5，魅蓝2机型联系人列表；\n\n
+        V6.8.0更新日志:\n
+		1、【优化】Flyme5联系人列表；\n\n
+        V6.7.0更新日志:\n
+		1、【适配】Flyme5查询联系人；\n\n
+        V6.6.0更新日志:\n
+		1、【优化】接管系统拨号问题；\n
+		2、【优化】通话记录的加载；\n\n
+        V6.5.0更新日志:\n
+		1、【适配】Flyme5骚扰拦截；\n
+		2、【适配】Flyme5通话录音；\n\n
+        V6.4.0更新日志:\n
+		1、【优化】接管系统拨号问题；\n\n
+        V6.3.0更新日志:\n
+		1、【修正】接管Flyme5系统拨号问题；\n\n
+        V6.2.0更新日志:\n
+		1、【新增】输入框号码可编辑；\n
+		2、【新增】通话记录和联系人列表快速滑动；\n\n
+        V6.1.0更新日志:\n
+		1、【适配】Flyme5底部菜单不显示问题；\n\n
+        V5.8.0更新日志:\n
+		1、【优化】个性彩铃；\n
+        V5.7.0更新日志:\n
+		1、【新增】个性彩铃；\n
+        V5.5.0更新日志:\n
+		1、【优化】通话记录的加载；\n\n
+        V5.4.0更新日志:\n
+		1、【优化】骚扰拦截；\n\n
+        V5.3.0更新日志:\n
+		1、【优化】骚扰拦截；\n
+		2、【优化】通话录音；\n\n
+        V5.2.0更新日志:\n
+		1、【优化】通话记录的加载；\n
+		2、【优化】联系人号码的匹配；\n\n
+        V5.1.0更新日志:\n
+		1、【优化】接管拨号；\n
+		2、【优化】主题设置；\n\n
+        V5.0.0更新日志:\n
+		1、【优化】通话记录加载；\n
+		2、【优化】查询联系人；\n\n
+        V4.9.0更新日志:\n
+		1、【优化】通话记录加载；\n
+		2、【优化】接管拨号；\n\n
+        V4.8.0更新日志:\n
+		1、【优化】通话记录加载；\n
+		2、【新增】Flyme账号认证方式；\n\n
+        V4.7.0更新日志:\n
+		1、【优化】通话录音设置；\n
+		2、【修改】图标；\n\n
+        V4.6.0更新日志:\n
+		1、【新增】通话录音设置；\n
+		2、【优化】页面布局；\n\n
+        V4.5.0更新日志:\n
+		1、【修正】第三方应用调用魅拨号；\n
+		2、【优化】主题设置；\n\n
+        V4.4.0更新日志:\n
+		1、【优化】联系人自动合并；\n
+		2、【优化】拨号页面；\n\n
+        V4.3.0更新日志:\n
+		1、【优化】通话记录的加载；\n
+		2、【优化】接管拨号；\n\n
+        V4.2.0更新日志:\n
+		1、【优化】主题设置；\n
+		2、【优化】联系人页面搜索；\n\n
+        V4.1.0更新日志:\n
+		1、【修正】拨打前缀IP号码；\n
+		2、【优化】软件界面的加载；\n\n
+        V4.0.0更新日志:\n
+		1、【新增】拨打前缀IP号码；\n
+		2、【优化】通话记录的加载；\n\n
+		V3.9.0更新日志:\n
+		1、【优化】联系人匹配；\n
+		2、【优化】主题样式；\n\n
+        V3.8.0更新日志:\n
+		1、【优化】多音字联系人识别；\n
+		2、【优化】魅族验证；\n\n
+        V3.7.0更新日志:\n
+		1、【修正】通话时间的显示；\n
+		2、【修正】偶现闪退问题；\n\n
+        V3.6.0更新日志:\n
+		1、【优化】通话记录的加载；\n
+		2、【优化】联系人号码的匹配；\n\n
+        V3.5.0更新日志:\n
+		1、【修正】拨号盘偶现不能弹出问题；\n\n
+        V3.4.0更新日志:\n
+		1、【优化】查询联系人；\n
+		2、【优化】软件设置页面；\n\n
+        V3.3.1更新日志:\n
+		1、【新增】联系人多彩头像；\n
+		2、【修改】软件图标；\n\n
+        V3.3.0更新日志:\n
+		1、【修正】默认主题状态栏颜色；\n
+		2、【修改】软件图标；\n\n
+        V2.9.1更新日志:\n
+		1、【优化】号码粘贴；\n\n
+        V2.9.0更新日志:\n
+		1、【新增】默认拨号；\n
+		2、【新增】号码粘贴；\n\n
+        V2.8.0更新日志:\n
+		1、【优化】通话记录加载；\n
+		2、【修正】合并联系人后第一号码的显示；\n\n
+        V2.7.0更新日志:\n
+		1、【新增】沉浸式状态栏；\n
+		2、【新增】合并联系人开关；\n\n
+        V2.6.0更新日志:\n
+		1、【新增】手机和SIM卡联系人操作；\n
+		2、【新增】查询号码默认使用百度搜索；\n\n
+        V2.5.0更新日志:\n
+		1、【新增】接管系统拨号；\n
+		2、【修正】通话记录列表联系人头像显示；\n\n
+        V2.4.0更新日志:\n
+		1、【新增】通话记录联系人头像；\n
+		2、【优化】搜索匹配联系人；\n
+		3、【优化】适配MX4图标；\n\n
+        V2.3.0更新日志:\n
+		1、【新增】添加号码的复制功能；\n
+		2、【修正】mx2启动时就报错的问题；\n\n
+        V2.2.0更新日志:\n
+		1、【修改】拨号盘的显示隐藏方式；\n
+		2、【修正】联系人搜索时滑动列表隐藏输入法； \n\n
+        V2.1.0更新日志:\n
+		1、【修改】拨号盘风格；\n
+		2、【修正】拨号盘隐藏；\n\n
+        V2.0.0更新日志:\n
+		1、【新增】Flyme4.0风格拨号盘；\n
+		2、【新增】联系人自动合并；\n
+		3、【新增】拨号页面添加联系人；\n\n
+        V1.6.3更新日志:\n
+		1、【修正】新固件支持来电过滤；\n
+		2、【优化】联系人页面搜索；\n\n
+        V1.6.2更新日志:\n
+		1、【修正】联系人页面搜索结果的查看；\n\n
+        V1.6.1更新日志:\n
+		1、【新增】土豪金应用主题色；\n
+		2、【修正】部分多音字姓氏；\n\n
+        V1.6.0更新日志:\n
+		1、【优化】通话记录和联系人列表滑动；\n
+		2、【修正】T9搜索多音字姓氏联系人；\n\n
+        V1.5.0更新日志:\n
+		1、【新增】来电过滤；\n
+		2、【新增】通话录音；\n\n
+        V1.4.0更新日志:\n
+		1、【新增】联系人页面搜索；\n
+		2、【修正】联系人姓氏多音字排序；\n\n
+        V1.3.0更新日志:\n
+		1、【新增】SmartBar的主题设置；\n
+		2、【修正】“+86”前缀通话记录号码不能匹配姓名；\n\n
+        V1.2.0更新日志:\n
+		1、【新增】联系人的合并；\n
+		2、【修正】通话记录详情；\n
+		3、【优化】通话记录和联系人的加载；\n\n
+        V1.1.0更新日志:\n
+		1、【新增】清除所有通话记录；\n
+		2、【新增】通话记录的合并；\n
+		3、【优化】联系人字母导航；\n
+		4、【优化】通话记录的加载；\n\n
+        V1.0.3更新日志:\n
+		1、【优化】拨号盘的页面加载；\n
+		2、【优化】通话记录的加载；\n
+		3、【新增】陌生号码的在线查询；\n\n
+        V1.0.2更新日志:\n
+		1、【修正】新固件中联系人字母导航问题；\n
+		2、【优化】通话记录的加载；\n\n
+        V1.0.1更新日志:\n
+		1、【新增】陌生号码的归属地显示；\n
+		2、【新增】联系人字母导航；\n
+		3、【新增】页签左右滑动；\n\n</string>
+    <!-- 关于我们 -->
+    <string name="about_us_lable">关于我们</string>
+    <string name="about_us_title">关于我们</string>
+    <string name="about_us_summary">哇牛工作室</string>
+    <string name="about_us_content_text">\nCode by：Snail、MissCat\nDesign by：☆深蓝の彩☆\n\n如您有建议请联系我们，我们将持续改进，非常感谢。\n</string>
+    <!-- 软件推荐 -->
+    <string name="our_product_title">我们的小伙伴</string>
+    <string name="our_product_summary">惊呆了！@o@</string>
+    <string name="software_recommend_label">软件推荐</string>
+    <string name="randtone_title">随变铃声</string>
+    <string name="randtone_summary">铃声控的必备随机铃声软件</string>
+    <!-- 联系人操作 -->
+    <string name="no_sim">未检测到SIM卡</string>
+    <string name="locked_or_unknown_sim">SIM卡被锁定或其他未知状态</string>
+    <string name="airplanemode_sim">飞行模式下不能操作SIM卡</string>
+    <string name="delete">删除</string>
+    <string name="copy2phone">复制到手机</string>
+    <string name="copy2sim">复制到SIM卡</string>
+    <string name="select_all">全选</string>
+    <string name="select_least_one">请至少选择一位联系人</string>
+    <string name="copy2sim_confirm_content">复制所选联系人到SIM卡？</string>
+    <string name="copy2phone_confirm_content">复制所选联系人到手机？</string>
+    <string name="copy_doing">正在复制....</string>
+    <string name="copy_done">复制完成</string>
+    <string name="copy_success_format">结果：%s人成功</string>
+    <string name="copy_failed_farmat">结果：%1$s人成功，%2$s人失败\n失败原因：未知错误</string>
+    <string name="copy2sim_failed_format">结果：%1$s人成功，%2$s人失败\n失败原因：SIM卡容量已满或其他未知错误</string>
+    <string name="copy_duple_format">结果：%1$s人成功，%2$s人重复</string>
+    <string name="copy_duple_failed_format">结果：%1$s人成功，%2$s人失败，%3$s人重复\n失败原因：未知错误</string>
+    <string name="copy2sim_duple_failed_format">结果：%1$s人成功，%2$s人失败，%3$s人重复\n失败原因：SIM卡容量已满或其他未知错误</string>
+    <string name="delete_confirm_content">删除所选联系人？</string>
+    <string name="delete_doing">正在删除....</string>
+    <string name="delete_done">删除完成</string>
+    <string name="delete_success">删除成功</string>
+    <string name="delete_success_format">结果：%s人成功</string>
+    <string name="delete_success_cancel_format">结果：%1$s人成功，%2$s人未进行</string>
+    <string name="delete_failed_format">结果：%1$s人成功，%2$s人失败\n失败原因：未知错误</string>
+    <string name="delete_failed_cancel_format">结果：%1$s人成功，%2$s人失败，%3$s人未进行\n失败原因：未知错误</string>
+
+</resources>

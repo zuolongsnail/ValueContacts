@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="gray">#808080</color>
+    <color name="gray_bg">#F3F2F0</color>
+    <color name="light_gray">#d7d7d7</color>
+    <color name="blue">#5380dc</color>
+    <color name="list_item_n">#FFFFFF</color>
+    <color name="list_item_p">#84C9F0</color>
+    <color name="div_line_color">#E6E4E1</color>
+    <color name="head_text_color">#807D78</color>
+    <color name="label_text_color">#ff9A9691</color>
+    <color name="title_text_color">#ff2d2d2d</color>
+    <color name="summary_text_color">#ff9A9691</color>
+    <color name="mz_round_colorfulbg_color">#43b56b</color>
+    <!-- 主题色 -->
+    <color name="theme_black">#101010</color>
+    <color name="theme_blue">#44aff9</color>
+    <color name="theme_purple">#A37FBF</color>
+    <color name="theme_green">#43b56b</color>
+    <color name="theme_yellow">#f6b944</color>
+    <color name="theme_red">#f56455</color>
+    <color name="theme_white">#F7F5F0</color>
+    <color name="theme_gold">#bd713b</color>
+
+    <!-- 皮肤主题色 -->
+    <color name="theme_hellokitty">#e095a1</color>
+
+</resources>

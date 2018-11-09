@@ -1,0 +1,168 @@
+<resources>
+
+    <!-- Application theme. -->
+    <!-- <style name="AppTheme" parent="Theme.Sherlock.Light.DarkActionBar"> -->
+    <!-- <item name="android:actionBarStyle">@style/Transparent</item> -->
+    <!-- <item name="android:windowActionBarOverlay">true</item> -->
+    <!-- </style> -->
+    <style name="BaseAppTheme" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        <!-- <item name="android:actionBarStyle">@style/Widget.ActionBar</item> -->
+    </style>
+
+    <style name="BaseWhiteAppTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <!-- <item name="android:actionBarStyle">@style/Widget.ActionBar</item> -->
+    </style>
+
+    <!-- 联系人应用主题:黑色 -->
+    <style name="Theme.Contacts.Black" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/BlackContactsApp</item>
+    </style>
+
+    <style name="BlackContactsApp">
+
+        <!-- themeColor -->
+        <item name="themeColor">@color/theme_black</item>
+        <!-- 页面标题栏文字颜色 -->
+        <item name="titleColor">@color/white</item>
+        <!-- 联系人搜索栏左图标 -->
+        <item name="contactsSearchLeftIcon">@drawable/ic_search_blue</item>
+        <!-- 联系人搜索栏清除图标 -->
+        <item name="contactsSearchCleanIcon">@drawable/ic_clean_blue</item>
+    </style>
+
+    <!-- 联系人应用主题：白色 -->
+    <style name="Theme.Contacts.White" parent="@style/BaseWhiteAppTheme">
+        <item name="ContactsAppStyle">@style/WhiteContactsApp</item>
+    </style>
+
+    <style name="WhiteContactsApp">
+        <item name="themeColor">@color/theme_white</item>
+        <!-- 月牙白主题SmartBar返回按键 -->
+        <item name="smartBarBackIcon">@drawable/ic_tab_back_black</item>
+        <item name="smartBarContactsIcon">@drawable/ic_tab_contacts_black</item>
+        <item name="smartBarDialerIcon">@drawable/ic_tab_dialer_black</item>
+        <item name="smartBarDialerDisplayIcon">@drawable/ic_tab_dialer_display_black</item>
+        <item name="smartBarSettingsIcon">@drawable/ic_tab_settings_black</item>
+        <item name="smartBarMoreIcon">@drawable/ic_tab_more_black</item>
+        <item name="titleColor">@color/black</item>
+        <!-- 联系人搜索栏左图标 -->
+        <item name="contactsSearchLeftIcon">@drawable/ic_search_blue</item>
+        <!-- 联系人搜索栏清除图标 -->
+        <item name="contactsSearchCleanIcon">@drawable/ic_clean_blue</item>
+        <!-- 粘贴号码图标 -->
+        <item name="pasteNumIcon">@drawable/ic_paste_dark</item>
+        <!-- 复制号码图标 -->
+        <item name="copyNumIcon">@drawable/ic_copy_dark</item>
+    </style>
+
+    <!-- 联系人应用主题：蓝色 -->
+    <style name="Theme.Contacts.Blue" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/BlueContactsApp</item>
+    </style>
+
+    <style name="BlueContactsApp">
+        <item name="themeColor">@color/theme_blue</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 联系人应用主题：紫色 -->
+    <style name="Theme.Contacts.Purple" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/PurpleContactsApp</item>
+    </style>
+
+    <style name="PurpleContactsApp">
+        <item name="themeColor">@color/theme_purple</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 联系人应用主题：绿色 -->
+    <style name="Theme.Contacts.Green" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/GreenContactsApp</item>
+    </style>
+
+    <style name="GreenContactsApp">
+        <item name="themeColor">@color/theme_green</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 联系人应用主题：黄色 -->
+    <style name="Theme.Contacts.Yellow" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/YellowContactsApp</item>
+    </style>
+
+    <style name="YellowContactsApp">
+        <item name="themeColor">@color/theme_yellow</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 联系人应用主题：红色 -->
+    <style name="Theme.Contacts.Red" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/RedContactsApp</item>
+    </style>
+
+    <style name="RedContactsApp">
+        <item name="themeColor">@color/theme_red</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 联系人应用主题：土豪金 -->
+    <style name="Theme.Contacts.Gold" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/GoldContactsApp</item>
+    </style>
+
+    <style name="GoldContactsApp">
+        <item name="themeColor">@color/theme_gold</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!-- 皮肤主题：HelloKitty -->
+    <style name="Theme.Contacts.Hellokitty" parent="@style/BaseAppTheme">
+        <item name="ContactsAppStyle">@style/HellokittyContactsApp</item>
+    </style>
+
+    <style name="HellokittyContactsApp">
+        <item name="themeColor">@color/theme_hellokitty</item>
+        <item name="smartBarContactsPressIcon">@drawable/ic_tab_contacts_white</item>
+        <item name="smartBarDialerPressIcon">@drawable/ic_tab_dialer_white</item>
+        <item name="smartBarDialerDisplayPressIcon">@drawable/ic_tab_dialer_display_white</item>
+        <item name="smartBarSettingsPressIcon">@drawable/ic_tab_settings_white</item>
+        <item name="titleColor">@color/white</item>
+    </style>
+
+    <!--
+    <style name="Theme.TranslucentActionBar" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar</item>
+    </style>
+
+    <style name="Theme.TranslucentActionBar.ActionBar" />
+
+    <style name="Theme.TranslucentActionBar.ActionBar.Overlay" parent="@android:style/Theme.DeviceDefault.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>    -->
+
+</resources>

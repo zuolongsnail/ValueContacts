@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/default_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dial_num_background" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/skin_default"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/defaul_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/skin_start" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/div_line_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/div_line_color" />
+
+        <LinearLayout
+            android:id="@+id/hellokitty_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dial_num_background" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/skin_hellokitty"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/hellokitty_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="24dip"
+                    android:layout_marginTop="8dip"
+                    android:text="@string/skin_start" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.valuestudio.contacts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 读取飞行模式 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 获取IMEI -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 保存异常log -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 接管拨号 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 接管拨号 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- 接管拨号 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- 接管拨号 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 5.0以上接管系统拨号 -->
+    <!--<uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />-->
+
+    <application
+        android:name="com.valuestudio.contacts.base.ContactsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.valuestudio.contacts.ui.PermissionActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.valuestudio.contacts.ui.ContactsFragmentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Contacts.Black"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="vnd.android.cursor.dir/calls" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tel" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.CALL_BUTTON" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.valuestudio.contacts.ui.MoreActivity"
+            android:label="@string/more"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.CheckUpdateActivity"
+            android:label="@string/version_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.AboutUsActivity"
+            android:label="@string/about_us_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.OurProductActivity"
+            android:label="@string/our_product_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.CallDetailActivity"
+            android:label="@string/call_detail"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.SkinSetActivity"
+            android:label="@string/skin_set_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.SearchNumActivity"
+            android:label="@string/search_num"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.ContactsOptionActivity"
+            android:label="@string/contacts_operate_title"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.PhoneContactActivity"
+            android:label="@string/phone_contacts_title"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.valuestudio.contacts.ui.SimContactActivity"
+            android:label="@string/sim_contacts_title"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.valuestudio.contacts.widget.WebViewWidget"
+            android:label="@string/colors_ring"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <service android:name="com.valuestudio.contacts.service.T9Service" />
+        <service
+            android:name="com.valuestudio.contacts.service.RelayDialerService"
+            android:label="@string/relay_dialer_title"
+            android:process=":RelayDialer" />
+        <!-- 开机完成广播 -->
+        <receiver android:name="com.valuestudio.contacts.service.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

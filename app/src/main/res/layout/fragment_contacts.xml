@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/theme_black" >
+
+            <ImageView
+                android:id="@+id/search_clean_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_clean_light"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/title_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/search_clean_btn"
+                android:drawableLeft="@drawable/ic_search_light"
+                android:gravity="center_vertical"
+                android:hint="@string/search_contact_format"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.valuestudio.contacts.widget.LetterListView
+            android:id="@+id/letter_list"
+            android:layout_width="24dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/title_layout"
+            android:background="@color/gray_bg"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/contact_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/title_layout"
+            android:layout_toLeftOf="@id/letter_list"
+            android:background="@color/gray_bg"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:paddingLeft="@dimen/list_item_padding"
+            android:scrollbars="none" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/no_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="@string/no_contact"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

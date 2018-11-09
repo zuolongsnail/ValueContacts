@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="16dp"
+    android:background="@color/gray_bg"
+    android:cacheColorHint="@null"
+    android:divider="@null"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 头像 -->
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/call_detail_photo_height"
+            android:background="@drawable/mz_contact_picture_big" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/list_item_padding"
+            android:paddingRight="@dimen/list_item_padding" >
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="36sp"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:id="@+id/other"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+            </LinearLayout>
+
+            <!-- 联系人信息 -->
+
+            <LinearLayout
+                android:id="@+id/contact_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+            <!-- 添加到新联系人 -->
+
+            <RelativeLayout
+                android:id="@+id/add_contact_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/add_contact_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/ic_add_contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/add_contact_view"
+                    android:singleLine="true"
+                    android:text="@string/add_contact"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/div_line_color" />
+            </RelativeLayout>
+            <!-- 添加到已有联系人 -->
+
+            <RelativeLayout
+                android:id="@+id/add_to_exist_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@drawable/list_item_selector"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/add_to_exist_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/ic_edit_dark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/add_to_exist_view"
+                    android:singleLine="true"
+                    android:text="@string/add_to_exist"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/div_line_color" />
+            </RelativeLayout>
+            <!-- 通话记录信息 -->
+
+            <LinearLayout
+                android:id="@+id/calllog_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/list_item_n"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/load_more"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/list_item_height"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/list_item_selector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="查看更多"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

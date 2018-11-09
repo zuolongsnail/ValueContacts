@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp" >
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:gravity="right"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/call_detail_font_size" />
+
+    <LinearLayout
+        android:id="@+id/log_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:layout_toLeftOf="@id/date"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/state_image"
+            android:layout_width="@dimen/call_detail_call_view_width"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_list_incoming" />
+
+        <TextView
+            android:id="@+id/state_text"
+            android:layout_width="@dimen/call_detail_call_state_width"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/call_detail_font_size" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/call_detail_font_size" />
+    </LinearLayout>
+
+</RelativeLayout>

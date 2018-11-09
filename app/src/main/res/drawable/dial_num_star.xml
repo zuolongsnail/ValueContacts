@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false" android:drawable="@drawable/dial_num_star_wht" />
+    <item android:drawable="@drawable/dial_num_star_wht_pressed" />
+</selector>

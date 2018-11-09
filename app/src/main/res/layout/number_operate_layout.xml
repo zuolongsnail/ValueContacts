@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/add_contact_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/add_contact_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_add_contact" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_contact_view"
+            android:singleLine="true"
+            android:text="@string/add_contact"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_to_exist_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/add_to_exist_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_edit_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/add_to_exist_view"
+            android:singleLine="true"
+            android:text="@string/add_to_exist"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/send_sms_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_item_selector" >
+
+        <ImageButton
+            android:id="@+id/send_sms_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/sms_selector" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/send_sms_view"
+            android:singleLine="true"
+            android:text="@string/send_sms"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_num_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/list_item_selector"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/ic_search_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/search_view"
+            android:singleLine="true"
+            android:text="@string/search_num"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/div_line_color" />
+    </RelativeLayout>
+
+</LinearLayout>

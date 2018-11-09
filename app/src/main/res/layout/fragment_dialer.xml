@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <!-- Title:数字输入框 -->
+        <!-- skin -->
+        <!-- focusable属性是为修正打开应用时弹出输入法的问题 -->
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:background="@color/theme_black"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <EditText
+                android:id="@+id/number_input_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:digits="1234567890*#,;"
+                android:gravity="center_vertical"
+                android:hint="@string/recent_call_log"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/gray_bg"
+            android:orientation="vertical" >
+
+            <!-- calllog空，重新点击 -->
+
+            <TextView
+                android:id="@+id/no_call_log"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_bg"
+                android:gravity="center_horizontal"
+                android:paddingTop="48dp"
+                android:text="@string/no_call_log"
+                android:textSize="18sp"
+                android:visibility="gone" />
+            <!-- calllog list -->
+
+            <ListView
+                android:id="@+id/call_log_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_bg"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:fastScrollEnabled="true"                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical" />
+            <!-- contact list -->
+
+            <ListView
+                android:id="@+id/contact_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/gray_bg"
+                android:cacheColorHint="@null"
+                android:divider="@null"
+                android:fastScrollEnabled="true"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="vertical"
+                android:visibility="gone" />
+
+            <include
+                android:id="@+id/operate_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                layout="@layout/number_operate_layout"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/dialpad_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dialpad_view" />
+    </LinearLayout>
+
+</RelativeLayout>

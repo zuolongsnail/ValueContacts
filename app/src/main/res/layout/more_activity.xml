@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <!-- 关于我们 -->
+
+        <TextView
+            style="@style/label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dip"
+            android:layout_marginRight="24dip"
+            android:layout_marginTop="8dip"
+            android:text="@string/about_us_lable" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/theme_green" />
+        <!-- 评价购买 -->
+
+        <RelativeLayout
+            android:id="@+id/buy_app_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/list_item_selector" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/buy_app_title"
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/buy_app_title" />
+
+                <TextView
+                    android:id="@+id/buy_app_summary"
+                    style="@style/summary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buy_app_summary" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/ic_next_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/theme_green" />
+
+        <!-- 意见反馈 -->
+
+
+        <!-- <LinearLayout -->
+        <!-- android:id="@+id/feedback_layout" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="56dip" -->
+        <!-- android:layout_marginLeft="16dip" -->
+        <!-- android:layout_marginRight="16dip" -->
+        <!-- android:background="@drawable/list_item_selector" -->
+        <!-- android:orientation="vertical" > -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/title_style" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="8dip" -->
+        <!-- android:layout_marginRight="8dip" -->
+        <!-- android:layout_marginTop="8dip" -->
+        <!-- android:singleLine="true" -->
+        <!-- android:text="@string/feedback_title" /> -->
+
+
+        <!-- <TextView -->
+        <!-- style="@style/summary_style" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="8dip" -->
+        <!-- android:layout_marginRight="8dip" -->
+        <!-- android:text="@string/feedback_summary" /> -->
+        <!-- </LinearLayout> -->
+
+
+        <!-- <View -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="0.5dip" -->
+        <!-- android:layout_marginLeft="16dip" -->
+        <!-- android:layout_marginRight="16dip" -->
+        <!-- android:background="@color/theme_green" /> -->
+        <!-- 分享软件 -->
+
+        <LinearLayout
+            android:id="@+id/share_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/list_item_selector"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:singleLine="true"
+                android:text="@string/share_title" />
+
+            <TextView
+                style="@style/summary_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:text="@string/share_summary" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/theme_green" />
+        <!-- 检查更新 -->
+
+        <RelativeLayout
+            android:id="@+id/check_update_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/list_item_selector" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/version_title" />
+
+                <TextView
+                    style="@style/summary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version_summary" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/ic_next_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/theme_green" />
+        <!-- 关于我们 -->
+
+        <RelativeLayout
+            android:id="@+id/about_us_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/list_item_selector" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/about_us_title" />
+
+                <TextView
+                    style="@style/summary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_summary" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/ic_next_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/theme_green" />
+
+        <!-- 我们的作品 -->
+
+        <RelativeLayout
+            android:id="@+id/our_product_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="56dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/list_item_selector"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dip"
+                    android:singleLine="true"
+                    android:text="@string/our_product_title" />
+
+                <TextView
+                    style="@style/summary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/our_product_summary" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/ic_next_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@color/theme_green" />
+    </LinearLayout>
+
+</LinearLayout>

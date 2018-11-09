@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/theme_black"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 主题美化 -->
+
+            <TextView
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="8dip"
+                android:text="@string/app_theme" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="6dip"
+                android:background="@color/theme_green" />
+            <!-- SmartBar背景颜色设置 -->
+
+            <LinearLayout
+                android:id="@+id/theme_set_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/theme_set_title"
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_marginTop="8dip"
+                    android:singleLine="true"
+                    android:text="@string/theme_set_title" />
+
+                <TextView
+                    android:id="@+id/theme_set_summary"
+                    style="@style/summary_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:text="@string/theme_set_summary" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green" />
+
+            <!-- 个性彩铃 -->
+
+            <RelativeLayout
+                android:id="@+id/colors_ring_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/colors_ring_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/colors_ring" />
+
+                    <TextView
+                        android:id="@+id/colors_ring_summary"
+                        style="@style/summary_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/colors_ring_summary" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/colors_ring_next_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/ic_next_right" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:layout_toLeftOf="@id/colors_ring_next_right"
+                    android:background="@drawable/ic_hot" />
+            </RelativeLayout>
+
+            <!-- 软件设置 -->
+
+            <TextView
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="8dip"
+                android:text="@string/app_settings" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="6dip"
+                android:background="@color/theme_green" />
+
+            <!-- 接管拨号 -->
+
+            <RelativeLayout
+                android:id="@+id/relay_dialer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/relay_dialer_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/relay_dialer_title" />
+
+                    <TextView
+                        android:id="@+id/relay_dialer_summary"
+                        style="@style/summary_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/relay_dialer_summary" />
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/relay_dialer_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green" />
+
+            <!-- 来电过滤 -->
+
+            <RelativeLayout
+                android:id="@+id/spam_call_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/spam_call_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/spam_call_title" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/ic_next_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green" />
+            <!-- 通话录音 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip" >
+
+                <ImageView
+                    android:id="@+id/call_record_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/settings_selector" />
+
+                <View
+                    android:id="@+id/call_record_divider"
+                    android:layout_width="1dip"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginRight="12dip"
+                    android:layout_marginTop="12dp"
+                    android:layout_toLeftOf="@id/call_record_settings"
+                    android:background="@drawable/ic_divider" />
+
+                <LinearLayout
+                    android:id="@+id/call_record_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/call_record_divider"
+                    android:background="@drawable/list_item_selector"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:id="@+id/call_record_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/call_record_title" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green" />
+            <!-- ip拨号 -->
+
+            <RelativeLayout
+                android:id="@+id/ip_call_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:id="@+id/ip_call_content_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/ip_call_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/ip_call_title" />
+
+                    <TextView
+                        android:id="@+id/ip_call_summary"
+                        style="@style/summary_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ip_call_summary" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/ip_call_content_layout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/ic_list_more" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green" />
+            <!-- 清除通话记录 -->
+
+            <LinearLayout
+                android:id="@+id/clean_call_log_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/clean_call_log_title"
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:singleLine="true"
+                    android:text="@string/clean_call_log_title" />
+            </LinearLayout>
+
+            <!-- 联系人选项 -->
+
+            <TextView
+                style="@style/label_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dip"
+                android:layout_marginRight="24dip"
+                android:layout_marginTop="8dip"
+                android:text="@string/contacts_option" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:layout_marginTop="6dip"
+                android:background="@color/theme_green" />
+            <!-- 合并联系人 -->
+
+            <RelativeLayout
+                android:id="@+id/merge_contacts_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/merge_contacts_title"
+                    style="@style/title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:singleLine="true"
+                    android:text="@string/merge_contacts_title" />
+
+                <Switch
+                    android:id="@+id/merge_contacts_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:clickable="false" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@color/theme_green"
+                android:visibility="gone" />
+            <!-- 联系人操作 -->
+
+            <RelativeLayout
+                android:id="@+id/contacts_operate_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="56dip"
+                android:layout_marginLeft="16dip"
+                android:layout_marginRight="16dip"
+                android:background="@drawable/list_item_selector" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/contacts_operate_title"
+                        style="@style/title_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/contacts_operate_title" />
+
+                    <TextView
+                        android:id="@+id/contacts_operate_summary"
+                        style="@style/summary_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contacts_operate_summary" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:background="@drawable/ic_next_right" />
+            </RelativeLayout>
+
+            <!-- 皮肤设置 -->
+
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/skin_set_layout" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="56dip" -->
+            <!-- android:layout_marginLeft="16dip" -->
+            <!-- android:layout_marginRight="16dip" -->
+            <!-- android:background="@drawable/list_item_selector" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/skin_set_title" -->
+            <!-- style="@style/title_style" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="8dip" -->
+            <!-- android:layout_marginRight="8dip" -->
+            <!-- android:layout_marginTop="8dip" -->
+            <!-- android:singleLine="true" -->
+            <!-- android:text="@string/skin_set_title" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/skin_set_summary" -->
+            <!-- style="@style/summary_style" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_marginLeft="8dip" -->
+            <!-- android:layout_marginRight="8dip" -->
+            <!-- android:text="@string/theme_set_summary" /> -->
+            <!-- </LinearLayout> -->
+
+
+            <!-- <View -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="0.5dip" -->
+            <!-- android:layout_marginLeft="16dip" -->
+            <!-- android:layout_marginRight="16dip" -->
+            <!-- android:background="@color/theme_green" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

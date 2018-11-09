@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="list_item_height">64dp</dimen>
+    <dimen name="photo_size">48dp</dimen>
+    <dimen name="alpha_height">30dp</dimen>
+    <dimen name="dial_btn_width">100dp</dimen>
+    <dimen name="dial_btn_height">60dp</dimen>
+    <!-- 通话详情 头像高度 -->
+    <dimen name="call_detail_photo_height">200dp</dimen>
+    <dimen name="call_detail_msg_view_width">80dp</dimen>
+    <dimen name="call_detail_call_view_width">64dp</dimen>
+    <dimen name="call_detail_call_state_width">80dp</dimen>
+    <dimen name="call_detail_font_size">14sp</dimen>
+
+</resources>
