@@ -14,7 +14,6 @@
 ⒍颜色样式的统一使用；<br>
 
 软件截图：<br>
-![拨号主页面](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/1.png)
-![查找联系人](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/2.png)
-![添加联系人](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/3.png)
-![设置页面](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/4.png)
+![拨号](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/1.png)
+![联系人](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/2.png)
+![设置](https://github.com/zuolongsnail/ValueContacts/blob/master/screenshot/3.png)
